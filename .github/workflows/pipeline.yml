@@ -51,7 +51,7 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh \
             | sh -s -- -b /usr/local/bin
           pwd
-          grype dir: ./ --fail-on medium
+          grype dir:./ --fail-on medium
 
       # ✅ PASSO 6: Já está pronto — Deploy (só roda se tudo passar)
       - name: 🌐 Configurar GitHub Pages
